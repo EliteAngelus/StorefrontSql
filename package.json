@@ -1,0 +1,24 @@
+{
+  "name": "storefrontsql",
+  "version": "1.0.0",
+  "description": "Amazon storefront app using mySQL and Node.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliteAngelus/StorefrontSql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EliteAngelus/StorefrontSql/issues"
+  },
+  "homepage": "https://github.com/EliteAngelus/StorefrontSql#readme",
+  "dependencies": {
+    "inquirer": "^5.0.1",
+    "mysql": "^2.15.0"
+  }
+}
