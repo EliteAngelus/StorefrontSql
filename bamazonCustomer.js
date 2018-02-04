@@ -124,13 +124,14 @@ console.log("==================")
             
             if(answer.choice === results[i].product_name) {
 
-                var quantity= results[i].stock_quantity
-
-                console.log(quantity);
+                var quantity = results[i].stock_quantity
 
                     console.log(results[i].price);
 
                      console.log("===================");
+
+
+          
 
             console.log("Your purchase: " + answer.choice +"\nTotal Amount:" +"$" + answer.purchase * results[i].price);
             // console.log('Your order has been placed! Your total is $' + results[answer.choice].price );
@@ -139,6 +140,23 @@ console.log("==================")
             console.log('Thank you for shopping with us!');
             console.log("\n=======================================\n");
 
+
+
+            function purchase() {
+                        connection.query("SELECT * FROM products", function(err, results){
+
+
+
+                                    if(results[i].stock_quantity >= answer.purchase){
+
+                                        console.log("We're sorry that item is out of stock");
+
+                                    }
+
+
+                        });
+
+                     }
                 }
             }
 
